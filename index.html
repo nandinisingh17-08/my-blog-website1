@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBlog | Stories & Ideas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <a href="#" class="logo">MyBlog<span>.</span></a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#blogs">Blogs</a>
+        <a href="#about">About</a>
+      </div>
+
+      <button id="themeBtn" class="theme-btn">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="tagline">WELCOME TO MYBLOG</p>
+      <h1>Stories, ideas &<br>inspiration.</h1>
+      <p class="hero-text">
+        Discover interesting stories, useful knowledge,
+        and fresh perspectives.
+      </p>
+      <a href="#blogs" class="main-btn">Explore Blogs →</a>
+    </section>
+
+    <section class="blog-section" id="blogs">
+      <div class="section-heading">
+        <div>
+          <p class="tagline">OUR ARTICLES</p>
+          <h2>Latest Blogs</h2>
+        </div>
+        <input type="text" id="searchInput"
+          placeholder="Search articles...">
+      </div>
+
+      <div class="blog-grid" id="blogContainer"></div>
+      <p id="noResults" hidden>No articles found.</p>
+    </section>
+
+    <section class="write-section">
+      <p class="tagline">YOUR VOICE MATTERS</p>
+      <h2>Write a Blog</h2>
+
+      <form id="blogForm">
+        <input type="text" id="blogTitle"
+          placeholder="Blog title" required>
+
+        <input type="text" id="blogCategory"
+          placeholder="Category (e.g. Technology)" required>
+
+        <textarea id="blogContent"
+          placeholder="Write your blog here..."
+          rows="5" required></textarea>
+
+        <button type="submit" class="main-btn">
+          Publish Blog
+        </button>
+      </form>
+      <p class="form-note">
+        Your posts are saved in this browser.
+      </p>
+    </section>
+
+    <section class="about-section" id="about">
+      <p class="tagline">ABOUT US</p>
+      <h2>A little space for big ideas.</h2>
+      <p>
+        MyBlog is a place to share knowledge, creativity,
+        experiences, and ideas with the world.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 MyBlog. Made with ❤️ using HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
